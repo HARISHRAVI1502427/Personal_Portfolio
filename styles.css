@@ -111,7 +111,9 @@ body{
   display: none;
 }
 
-
+.menu_icon ul{
+  display:none;
+}
 /*---------------------------HomePage--------------------------*/
 
 .FirstElement{
@@ -516,7 +518,14 @@ profile-photo .img{
   .header i{
     color: black;
   }
-
+.menu_icon ul{
+  display:flex;
+  justify-content:space-around;
+  margin-top:10px;
+}
+  .menu_icon ul a{
+    font-size:15px;
+  }
   .profile-text{
     width: 350px;
   }

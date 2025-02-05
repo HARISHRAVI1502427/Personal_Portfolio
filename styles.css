@@ -508,12 +508,13 @@ profile-photo .img{
   .container{
     width: 350px;
   }
-  .header{
-    display:flex;
-    justify-content:center;
-  }
   .header .menu_icon {
     display: block;
+  }
+  .header
+  {
+      display:flex;
+      justify-content:center;
   }
   .header ul{
     display: none;

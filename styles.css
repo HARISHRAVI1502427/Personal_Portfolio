@@ -518,6 +518,10 @@ profile-photo .img{
   .header i{
     color: black;
   }
+  .header{
+    display:flex;
+    justify-content:center;
+  }
 .menu_icon ul{
   display:flex;
   justify-content:space-around;

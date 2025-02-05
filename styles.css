@@ -508,7 +508,10 @@ profile-photo .img{
   .container{
     width: 350px;
   }
-
+  .header{
+    display:flex;
+    justify-content:center;
+  }
   .header .menu_icon {
     display: block;
   }
@@ -518,10 +521,7 @@ profile-photo .img{
   .header i{
     color: black;
   }
-  .header{
-    display:flex;
-    justify-content:center;
-  }
+
 .menu_icon ul{
   display:flex;
   justify-content:space-around;

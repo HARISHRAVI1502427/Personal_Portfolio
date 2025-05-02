@@ -109,6 +109,17 @@ $(document).ready(function() {
       }
     });
   }
-  
+  let link1= document.getElementById("project1");
+  link1.addEventListener('click',()=>{
+    location.href='https://harishravi1502427.github.io/Landing_Page/'
+  })
+  let link2= document.getElementById("project2");
+  link2.addEventListener('click',()=>{
+    location.href='https://harishravi1502427.github.io/Image_Slider/'
+  }) 
+let link3= document.getElementById("project3");
+  link3.addEventListener('click',()=>{
+    location.href='https://harishravi1502427.github.io/Personal_Portfolio/'
+  })
 
  

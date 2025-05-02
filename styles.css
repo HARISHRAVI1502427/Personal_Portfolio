@@ -393,6 +393,7 @@ profile-photo .img{
 }
 .project:hover{
   border-color: #fed700;
+  cursor: pointer;
 }
 
 

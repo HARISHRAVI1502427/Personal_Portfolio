@@ -13,227 +13,145 @@
 </head> 
 
 <body>
+  <div class="wrap">
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="bolt"><i class="fa-solid fa-bolt"></i></div>
+          <h1>Harish</h1>
+        </div>
 
-    <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-               
-                <a href="" class="logo">
-                    <h5 style="margin-right:10px">Harish</h5>
-                    <i class="fa fa-bolt"></i>
-                </a>
-                   
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-              
+        <nav aria-label="Primary navigation">
+          <button class="mobile-toggle" aria-expanded="false" aria-controls="mobile-nav"><i class="fa fa-bars"></i></button>
+          <ul id="primary-nav">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-            </div>
-            <div class="menu_icon">
-                        <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                    
-                </div>
-        </div> 
+      <!-- mobile nav (cloned by JS) -->
+      <div id="mobile-nav" style="display:none;margin-top:10px"></div>
     </header>
- 
-    <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="harish.jpg" alt="profile picture">
+
+    <!-- HERO -->
+    <main>
+      <section id="home" class="hero">
+        <div class="photo" data-hidden>
+          <img src="harish.jpg" alt="Harish — profile photo" loading="lazy" onerror="this.src='https://i.ibb.co/bs2kJ0W/default-avatar.png'">
         </div>
-        <div class="profile-text">
-            <h5>Hi I'm </h5><br>
-            <h1>Harish</h1><br>
-            <p>Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field</p>
-            
-            <div class="btn-group">
-                <a href="Harish.pdf" class="btn   active">Download CV</a>
-                <a href="mailto:harishravi150203@gmail.com" class="btn">Contact</a>
-            </div>
+        <div class="hero-content" data-hidden>
+          <h2>Hi, I'm <span style="color:var(--accent)">Harish</span></h2>
+          <p class="muted">A final-year MSc Computer Science student — Java, SQL, Git, front-end development. I build delightful, responsive web experiences and keep learning every day.</p>
 
-            <div class="social">
-                <a href="mailto:harishravi150203@gmail.com"><i class="fa fa-envelope"></i></a> 
-                <a href="https://www.linkedin.com/in/hariah-ravi-88509627a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+          <div class="cta">
+            <a class="btn primary" href="Harish.pdf" download>Download CV</a>
+            <a class="btn" href="mailto:harishravi150203@gmail.com">Contact</a>
+            <div style="margin-left:auto" class="socials">
+              <a href="mailto:harishravi150203@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/hariah-ravi-88509627a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+          </div>
+
+          <p style="margin-top:18px;color:var(--muted);font-size:14px">Open to internships &amp; entry-level roles • Chennai, India</p>
         </div>
-    </div>
+      </section>
 
-        <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about">
-                
-                <div class="about-content">
-                    <h4>About Me</h4>
-                    <ul>
-                      <li>I am currently pursuing my final year Master Degree in Computer Science.I have built a solid foundation in software development, particularly in areas such as Java, SQL, Git, and GitHub.</li>
-                      <li> My expertise in these areas allows me to approach projects with confidence and deliver high-quality results.I have a strong belief in the value of continuous learning and staying adaptable in the ever-evolving world of software.</li>
-                      <li> I actively seek out opportunities to expand my knowledge and skills, embracing new technologies and approaches.Feel free to explore my work and get in touch if you have any questions or opportunities to collaborate. </li>
-                    </ul>
-                </div>
-                                  
-                <div class="about-skills">
-                    <ul>
-                        <li>Name:Harish</li>
-                        <li>Age:21</li>     
-                        <li>From:India</li>
-                        <li>Email:harishravi150203@gmail.com</li>
-                        <li>Availabiltiy:Fulltime</li>
-                        <li>Experience &lt; Fresher</li>
-                    </ul>
-                </div>
-            </div>
+      <!-- ABOUT -->
+      <section id="about">
+        <h3 class="section-title">About Me</h3>
+        <div class="about-grid">
+          <div class="about-text card" data-hidden>
+            <p>I am currently pursuing my final year Master Degree in Computer Science. I have built a solid foundation in software development — Java, SQL, Git, and front-end technologies. I enjoy problem solving and creating polished user experiences.</p>
+            <p style="margin-top:12px" class="muted">I value continuous learning and enjoy taking on projects that stretch my skills. Below are my education, internships and projects.</p>
+          </div>
+
+          <aside class="about-meta" data-hidden>
+            <ul style="padding:0;margin:0">
+              <li><strong>Name:</strong> Harish</li>
+              <li><strong>Age:</strong> 21</li>
+              <li><strong>Location:</strong> Chennai, India</li>
+              <li><strong>Email:</strong> harishravi150203@gmail.com</li>
+              <li><strong>Availability:</strong> Full-time</li>
+              <li><strong>Experience:</strong> Fresher</li>
+            </ul>
+          </aside>
         </div>
-    </section>
+      </section>
 
+      <!-- EDUCATION & INTERNSHIP -->
+      <section id="education">
+        <h3 class="section-title">Education &amp; Internship</h3>
+        <div class="timeline">
+          <div class="card" data-hidden>
+            <h4>M.Sc Computer Science — Government Arts College, Nandanam</h4>
+            <small class="muted">2023 - 2025 — 80%</small>
+            <p class="muted" style="margin-top:8px">Focus: Advanced programming, databases, algorithms.</p>
+          </div>
 
-        <!-------------- Education & Internship -------------->
-    <section class="education-content" id="education">
-        <div class="container">
-            <div class="row">
-                <div class="education ">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
+          <div class="card" data-hidden>
+            <h4>B.Sc Computer Science — Thiru A. Govindasamy Govt Arts College</h4>
+            <small class="muted">2020 - 2023 — 86%</small>
+          </div>
 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        M.sc Computer Science - 80%
-                                    </h3>
-                                    <h4 class="timeline-title">Goverment Arts College (Autonomus),Nandanam.</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2023-2025
-                                    </h4>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">B.sc Computer Science - 86%</h3>
-                                    <h4 class="timeline-title">Thiru A.Govindasamy Govt Arts College.</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2020-2023
-                                    </h4>
-                                </div>
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        HSC - 79%
-                                    </h3>
-                                    <h4 class="timeline-title">National Higher Secondary School</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> 2018-2020
-                                    </h4>
-                                </div>
-                             
+          <div class="card" data-hidden>
+            <h4>Web Development Internship — RekonsTech</h4>
+            <small class="muted">April 2024</small>
+            <p class="muted" style="margin-top:8px">Built personal portfolio; learned practical front-end workflows and Git collaboration.</p>
+          </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="internship">
-                    <h3 class="title">Internship</h3>
-                    <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">
-                                        Web Development
-                                    </h3>
-                                    <h4 class="timeline-title">PERSONAL PORTFOLIO WEBSITE</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> April-2024
-                                    </h4>
-                                    <li class="timeline-text">I have Completed my internship in RekonsTech.This is my first internship its break my fear ,because before I was scary about web devolpment.This project show my skills and education details. 
-                                    </li>
-                                </div> 
-                                <!-- Timeline-item -->
-                                <div class="timeline-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="timeline-title">Frontend Development</h3>
-                                    <h4 class="timeline-title">INSTAGRAM DASHBOARD</h4>
-                                    <h4 class="timeline-title">
-                                        <i class="fa fa-calendar"></i> May-2024
-                                    </h4>
-                                    <li class="timeline-text">I have Completed my internship in Codealpha.I learnt new skills and Technology this project display user account and how times the user spend in instagram.</li>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="card" data-hidden>
+            <h4>Frontend Development Internship — Codealpha</h4>
+            <small class="muted">May 2024</small>
+            <p class="muted" style="margin-top:8px">Worked on an Instagram dashboard prototype to display usage metrics.</p>
+          </div>
         </div>
-    </section>
+      </section>
 
+      <!-- Projects -->
+      <section id="projects">
+        <h3 class="section-title">Projects</h3>
+        <div class="projects-grid">
+          <article class="project-card" data-hidden onclick="openProject('https://harishravi1502427.github.io/Landing_Page/')">
+            <i class="fa fa-calculator"></i>
+            <h4>Landing Page</h4>
+            <p class="muted">Responsive landing page for a digital agency built with HTML, CSS &amp; JS.</p>
+          </article>
 
-        <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>My Projects</h4>
-                <p>Discover my projects, where creativity meets innovation</p>
-            </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                <div class="project" id="project1">
-                    <i class="fa fa-calculator"></i>
-                    <h4>Landing Page</h4>
-                    <p>Designed and developed a modern, responsive landing page for a startup providing website development, UI/UX design, and related digital services. Built with HTML, CSS, and JavaScript, the page highlights services, promotes engagement, and ensures a smooth user experience. </p>
-                </div>
-                <div class="project" id="project2">
-                    <i class="fa fa-image"></i>
-                    <h4>Image Gallery</h4>
-                    <p>This project allow users to view and interact with a collection of images in a visually appealing layout.</p>
-                </div>
-                <!-- 3rd Project -->
-                <div class="project" id="project3">
-                    <i class="fa fa-desktop"></i>
-                    <h4>Portfolio Website</h4>
-                    <p>Created a portfolio website using HTML, CSS, and JavaScript, It serves as a platform to introduce myself, share my projects, and provide information about my  education and internship.</p>
-                </div>
-                
-            </div>
+          <article class="project-card" data-hidden onclick="openProject('https://harishravi1502427.github.io/Image_Slider/')">
+            <i class="fa fa-image"></i>
+            <h4>Image Gallery</h4>
+            <p class="muted">Image slider and gallery component with keyboard &amp; touch support.</p>
+          </article>
+
+          <article class="project-card" data-hidden onclick="openProject('https://harishravi1502427.github.io/Personal_Portfolio/')">
+            <i class="fa fa-desktop"></i>
+            <h4>Portfolio Website</h4>
+            <p class="muted">Personal portfolio showcasing education, internships and contact form.</p>
+          </article>
         </div>
-    </section>
+      </section>
 
-        <!-------------------------- Contact Me -------------------------->
+      <!-- CONTACT -->
+      <section id="contact">
+        <h3 class="section-title">Contact Me</h3>
+        <form class="contact-form" action="https://formspree.io/f/xovenqal" method="POST">
+          <div class="field"><input name="NAME" placeholder="Your name" required></div>
+          <div class="field"><input name="EMAIL" placeholder="Your email" required type="email"></div>
+          <div class="field"><input name="SUBJECT" placeholder="Subject"></div>
+          <div class="field"><textarea name="MESSAGE" placeholder="Message"></textarea></div>
+          <button class="submit" type="submit">Send message</button>
+        </form>
+      </section>
+    </main>
 
-    <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me</h4>
-                <p>Get In Touch</p>
-            </div>
-            <div class="contact">
-                <form action="https://formspree.io/f/xovenqal" method="POST" accept-charset="utf-8">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" href="mailto:harishravi150203@gmail.com" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </section>
+    <footer>
+      <small>Thanks for visiting — Harish • © 2025</small>
+    </footer>
+  </div>
         
     <!-------------------------- JS -------------------------->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -242,10 +160,7 @@
     <script src="script.js"></script>
     
     <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="message">Thanks for visiting and happy coding!</small>
-    <small class="copyright">&copy; Copyright 2025. All rights reserved.</small>
-   </footer>
+  
 
 </body>
 </html>
